@@ -8,7 +8,7 @@
     <RelativeLayout
         android:id="@+id/rl_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:background="@color/colorPrimary">
 
         <TextView
@@ -37,17 +37,19 @@
 
     </RelativeLayout>
 
-    <FrameLayout
-        android:id="@+id/main_fragment"
-        android:layout_above="@id/bottombar"
-        android:layout_below="@id/rl_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></FrameLayout>
-
     <com.ashokvarma.bottomnavigation.BottomNavigationBar
         android:id="@+id/bottombar"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="40dp">
+        android:layout_height="wrap_content">
     </com.ashokvarma.bottomnavigation.BottomNavigationBar >
+
+    <FrameLayout
+        android:id="@+id/main_fragment"
+        android:layout_below="@id/rl_toolbar"
+        android:layout_above="@id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+
 </RelativeLayout>
